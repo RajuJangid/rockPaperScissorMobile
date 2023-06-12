@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style7.css"> -->
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+    <link rel="stylesheet" href="newstyle.css">
+    <title>Stone, Paper, Scissor</title>
+</head>
+<body>
+    <section class="bkg">
+        <h1 id="heading1"> <u> ROCK-PAPER-SCISSOR </u></h1>
+    </section>
+    <div class="match-box">
+        <button class="keys" id="rock" onclick ="userChoseRock()">ROCK</button>
+        <button class="keys" id="paper" onclick ="userChosePaper()">PAPER</button>
+        <button class="keys" id="scissor" onclick ="userChoseScissor()">SCISSOR</button>
+    </div>
+    <div class="user-hand-img" >
+        <img class="user-tool" id="user-rock" src="Rock.png" alt="Rock">
+        <img class="user-tool" id="user-paper" src="Paper.png" alt="Paper">
+        <img class="user-tool" id="user-scissor" src="Scissor.png" alt="Scissor">
+    </div> 
+    <div class="border-box" id="user-box"></div>
+    <div class="computer-hand-img" >
+        <img class="computer-tool" id="computer-rock" src="Rock.png" alt="Rock">
+        <img class="computer-tool" id="computer-paper" src="Paper.png" alt="Paper">
+        <img class="computer-tool" id="computer-scissor" src="Scissor.png" alt="Scissor">
+    </div>
+    <div class="border-box" id="computer-box"></div>
+    <h1 id="vs-line">VS</h1>
+    <div class="computer-and-user">
+        <h2 class="computer-and-user-class" id="u">YOU</h2>
+        <h2 class="computer-and-user-class" id="c">COMPUTER</h2>
+    </div>
+    <div class="score-box">
+        <p class="lower-keys" id="user-score">You : 0</p>
+        <p class="lower-keys" id="computer-score">Computer : 0</p>
+    </div>
+    <button class="middle-keys" id="reset" onclick="userChoseReset()">RESET</button> 
+</body>
+<script src="script7.js"></script>
+</html>

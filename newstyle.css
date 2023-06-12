@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&family=Dancing+Script:wght@700&family=Joan&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.bkg{
+    width: 100%;
+    height: 35em;
+    background-color: rgb(58, 107, 91);
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+#heading1{
+    padding-top: 3rem;
+    color: rgba(3, 32, 39, 0.89);
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+}
+.match-box{
+    border: 8px solid rgb(29, 28, 28);
+    z-index: 1;
+    width: 18.5rem;
+    height: 24rem;
+    position: absolute;
+    top: 6.5rem;
+    left: 1.5rem;
+    border-radius: 5px;
+    background-color: rgb(27, 48, 41);
+    display: flex;
+     justify-content: space-evenly;
+     align-items: flex-end;
+}
+.keys{
+    border: 2px solid rgb(116, 107, 107);
+    border-radius: 1px;
+    width: 28%;
+    height: 9%;
+    background-color: rgb(194, 191, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+    font-size:medium;
+    cursor: pointer;
+}
+.user-hand-img{
+    z-index: 2;
+    position: absolute;
+    top: 11rem;
+    left: 2.8rem;
+}
+#user-rock{
+    z-index: 3;
+    visibility: hidden;
+}
+#user-paper{
+    z-index: 4;
+    margin-left: -33.5%;
+    visibility: hidden;
+}
+#user-scissor{
+    z-index: 5;
+    margin-left: -33.5%;
+    visibility: hidden;
+}
+.user-tool{
+    width: 5.8rem;
+    border: 2px solid whitesmoke;
+}
+.border-box{
+    width: 5.7rem;
+    height: 6.9rem;
+    border: 4px solid rgb(245, 245, 245);
+}
+#user-box{
+    position: absolute;
+    top: 11rem;
+    left: 2.7rem;
+    z-index: 6;
+}
+.computer-hand-img{
+    z-index: 2;
+    position: absolute;
+    top: 11rem;
+    left: 13.5rem;
+}
+#computer-rock{
+    z-index: 3;
+    visibility: hidden;
+}
+#computer-paper{
+    z-index: 4;
+    margin-left: -70%;
+    visibility: hidden;
+}
+#computer-scissor{
+    z-index: 5;
+    margin-left: -70%;
+    visibility: hidden;
+}
+.computer-tool{
+    width: 5.8rem;
+    border: 2px solid whitesmoke;
+}
+#computer-box{
+    position: absolute;
+    top: 11rem;
+    left: 13.5rem;
+    z-index: 6;
+}
+#vs-line{
+    margin-left: 9.8rem;
+    margin-top: -21.4rem;
+    font-size: 35px;
+    color: aliceblue;
+    z-index: 3;
+    position: absolute;
+}
+.computer-and-user-class{
+    color: cornflowerblue;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.computer-and-user{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 8.3rem;
+    left: 4rem;
+    width: 16rem;
+    z-index: 4;
+}
+.score-box{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 25rem;
+    left: 2.5rem;
+    width: 17.2rem;
+    z-index: 4;
+}
+.lower-keys{
+    color: rgb(4, 17, 41);
+    font-size: 19px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: rgb(209, 209, 203);
+    width: 7.9rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.middle-keys{
+    color: rgb(4, 17, 41);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: rgb(73, 73, 69);
+    width: 6rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+#reset{
+    position: absolute;
+    top: 28.8rem;
+    left: 8.1rem;
+    z-index: 4;
+    cursor: pointer;
+}
+@media only screen and (min-width: 40rem) {
+    .bkg{
+        height: 42em;
+    }
+}
